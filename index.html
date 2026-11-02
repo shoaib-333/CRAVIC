@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRAVIC — Made with Love, Just For You | Burgers, Fries, Shawarma &amp; Chicken Karahi</title>
+  <meta name="description" content="CRAVIC cloud kitchen — homemade, fresh, hygienic and tasty Burgers, Fries, Shawarma and Chicken Karahi. Pre-order 2 to 3 hours in advance for your special meals." />
+  <meta name="theme-color" content="#b3145a" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 31'%3E%3Cpath fill='%23c2185b' d='M16 28.7S2 19.6 2 10.7C2 6 5.6 2.5 10 2.5c2.9 0 5.2 1.5 6 3.3.8-1.8 3.1-3.3 6-3.3 4.4 0 8 3.5 8 8.2 0 8.9-14 18-14 18z'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;0,900;1,700&family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ SVG sprite ============ -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="i-heart" viewBox="0 0 32 31">
+      <path d="M16 28.7S2 19.6 2 10.7C2 6 5.6 2.5 10 2.5c2.9 0 5.2 1.5 6 3.3.8-1.8 3.1-3.3 6-3.3 4.4 0 8 3.5 8 8.2 0 8.9-14 18-14 18z"/>
+    </symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24">
+      <path d="M6 8h12l-1.2 12.2H7.2L6 8Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+      <path d="M9.2 8V6.6a2.8 2.8 0 0 1 5.6 0V8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-leaf" viewBox="0 0 70 26">
+      <path d="M2 13h64" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+      <ellipse cx="16" cy="13" rx="8" ry="4" fill="currentColor" transform="rotate(-18 16 13)"/>
+      <ellipse cx="30" cy="8" rx="7" ry="3.4" fill="currentColor" transform="rotate(16 30 8)"/>
+      <ellipse cx="30" cy="18" rx="7" ry="3.4" fill="currentColor" transform="rotate(-16 30 18)"/>
+      <ellipse cx="44" cy="9" rx="6" ry="3" fill="currentColor" transform="rotate(18 44 9)"/>
+      <circle cx="62" cy="13" r="3" fill="currentColor"/>
+    </symbol>
+    <symbol id="i-rose" viewBox="0 0 130 130">
+      <path d="M24 92C10 88 2 74 6 60c14 2 24 14 24 28z" fill="#5f8f63"/>
+      <path d="M104 96c14-6 20-20 14-34-13 4-21 17-19 31z" fill="#4f7d55"/>
+      <circle cx="64" cy="56" r="38" fill="#e8698d"/>
+      <circle cx="64" cy="56" r="38" fill="none" stroke="#b3145a" stroke-width="2.5"/>
+      <path d="M64 24a32 32 0 0 1 0 64 27 27 0 0 1-27-27 22 22 0 0 1 22-22 18 18 0 0 1 18 18 14 14 0 0 1-14 14" fill="none" stroke="#b3145a" stroke-width="4" stroke-linecap="round"/>
+      <path d="M64 8c-5 6-6 12-4 18M40 20c-2 6 0 12 4 16M92 26c-6 3-9 8-9 14" fill="none" stroke="#c9356c" stroke-width="3" stroke-linecap="round"/>
+      <path d="M50 106c8 6 20 6 28 0" fill="none" stroke="#4f7d55" stroke-width="4" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-plate" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+    </symbol>
+    <symbol id="i-bike" viewBox="0 0 24 24">
+      <circle cx="5.5" cy="17" r="3.2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <circle cx="18.5" cy="17" r="3.2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <path d="M8.5 17h7l-3-8h-3M14 6h3l1.6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <path d="M12 7v5.3l3.4 2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24">
+      <path d="M7 3.5h3l1.5 4-2 1.4a12 12 0 0 0 5.6 5.6l1.4-2 4 1.5v3c0 1-.8 1.8-1.8 1.7C10.4 18.9 5.1 13.6 4.3 5.3A1.7 1.7 0 0 1 6 3.5h1z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24">
+      <path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <circle cx="12" cy="10" r="2.6" fill="none" stroke="currentColor" stroke-width="1.6"/>
+    </symbol>
+  </svg>
+
+  <a class="skip-link" href="#menu">Skip to menu</a>
+
+  <!-- ============ Header ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="CRAVIC home">
+        <span class="logo-word logo-word--sm">
+          <span class="lc">C<svg class="ht ht-c" viewBox="0 0 32 31" aria-hidden="true"><use href="#i-heart"/></svg></span><span>R</span><span>A</span><span class="lv">V<svg class="ht ht-v" viewBox="0 0 32 31" aria-hidden="true"><use href="#i-heart"/></svg></span><span>I</span><span>C</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a href="#top" class="nav-link is-active">Home</a>
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#order" class="nav-link">Order</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn cart-btn" id="cartBtn" aria-label="Open your order">
+          <svg viewBox="0 0 24 24" width="21" height="21" aria-hidden="true"><use href="#i-bag"/></svg>
+          <span class="cart-count" id="cartCount" hidden>0</span>
+        </button>
+        <button class="hamburger" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ Hero ============ -->
+    <section class="hero" id="top">
+      <div class="orn orn--tl"><svg viewBox="0 0 130 130" width="150" height="150" aria-hidden="true"><use href="#i-rose"/></svg></div>
+      <div class="orn orn--tr"><svg viewBox="0 0 130 130" width="110" height="110" aria-hidden="true"><use href="#i-rose"/></svg></div>
+      <div class="orn orn--bl"><svg viewBox="0 0 130 130" width="110" height="110" aria-hidden="true"><use href="#i-rose"/></svg></div>
+      <div class="orn orn--br"><svg viewBox="0 0 130 130" width="150" height="150" aria-hidden="true"><use href="#i-rose"/></svg></div>
+
+      <div class="container hero-inner">
+        <p class="eyebrow reveal">Cloud Kitchen · Freshly Cooked Daily</p>
+
+        <h1 class="hero-logo reveal">
+          <span class="logo-word logo-word--lg" aria-label="CRAVIC">
+            <span class="lc">C<svg class="ht ht-c" viewBox="0 0 32 31" aria-hidden="true"><use href="#i-heart"/></svg></span><span>R</span><span>A</span><span class="lv">V<svg class="ht ht-v" viewBox="0 0 32 31" aria-hidden="true"><use href="#i-heart"/></svg></span><span>I</span><span>C</span>
+          </span>
+        </h1>
+
+        <p class="script-line reveal">Made with Love,</p>
+        <p class="kicker reveal"><span class="mini-heart">♥</span> JUST FOR YOU <span class="mini-heart">♥</span></p>
+
+        <div class="divider reveal">
+          <svg class="leaf leaf--l" viewBox="0 0 70 26" width="70" height="26" aria-hidden="true"><use href="#i-leaf"/></svg>
+          <span class="divider-text">Cravic Best Deals. Bigger Taste.</span>
+          <svg class="leaf leaf--r" viewBox="0 0 70 26" width="70" height="26" aria-hidden="true"><use href="#i-leaf"/></svg>
+        </div>
+
+        <p class="hero-sub reveal">Burgers, Fries, Shawarma &amp; Chicken Karahi — homemade, hygienic and delivered hot to your door.</p>
+
+        <div class="hero-cta reveal">
+          <a href="#menu" class="btn btn-primary">Explore the Menu</a>
+          <a href="#" class="btn btn-ghost wa-link" data-wa="hero">Order on WhatsApp</a>
+        </div>
+      </div>
+
+      <a href="#features" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- ============ Features band ============ -->
+    <section class="features" id="features">
+      <div class="container features-inner">
+        <span class="feature reveal">Homemade</span>
+        <span class="f-heart reveal" aria-hidden="true">♥</span>
+        <span class="feature reveal">Fresh</span>
+        <span class="f-heart reveal" aria-hidden="true">♥</span>
+        <span class="feature reveal">Hygienic</span>
+        <span class="f-heart reveal" aria-hidden="true">♥</span>
+        <span class="feature reveal">Tasty Food</span>
+      </div>
+    </section>
+
+    <!-- ============ Menu ============ -->
+    <section class="menu-section" id="menu">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="script-line script-line--sm">Our Menu</p>
+          <h2 class="section-title">Four Cravings. One Kitchen.</h2>
+          <p class="section-sub">Tap a category to filter. Every dish is cooked fresh after you order.</p>
+        </header>
+
+        <div class="tabs reveal" role="tablist" aria-label="Menu categories" id="tabs">
+          <button class="tab is-active" role="tab" aria-selected="true" data-cat="all">All</button>
+          <button class="tab" role="tab" aria-selected="false" data-cat="burgers">Burgers</button>
+          <button class="tab" role="tab" aria-selected="false" data-cat="fries">Fries</button>
+          <button class="tab" role="tab" aria-selected="false" data-cat="shawarma">Shawarma</button>
+          <button class="tab" role="tab" aria-selected="false" data-cat="karahi">Chicken Karahi</button>
+        </div>
+
+        <div class="grid" id="menuGrid"><!-- cards injected by script.js --></div>
+
+        <p class="menu-note reveal">All prices in PKR. <span class="mini-heart">♥</span> Pre-order 2 to 3 hours in advance for your special meals.</p>
+      </div>
+    </section>
+
+    <!-- ============ Order ============ -->
+    <section class="order-section" id="order">
+      <div class="container order-inner">
+        <div class="order-copy reveal">
+          <p class="script-line script-line--sm">How it works</p>
+          <h2 class="section-title section-title--light">Order in four easy steps</h2>
+          <ol class="steps">
+            <li><span class="step-no">1</span><div><h3>Pick your favourites</h3><p>Add burgers, fries, shawarma or karahi to your order tray.</p></div></li>
+            <li><span class="step-no">2</span><div><h3>Send it on WhatsApp</h3><p>One tap sends your full order list and total straight to our kitchen.</p></div></li>
+            <li><span class="step-no">3</span><div><h3>We cook it fresh</h3><p>Nothing is pre-made — your food hits the pan only after you confirm.</p></div></li>
+            <li><span class="step-no">4</span><div><h3>Hot at your door</h3><p>Delivered sealed and steaming, or ready for pickup in 30–40 minutes.</p></div></li>
+          </ol>
+        </div>
+
+        <aside class="order-card reveal" id="contact">
+          <div class="order-card-inner">
+            <p class="script-line script-line--sm">Pre Order</p>
+            <h3 class="order-card-title">Order 2 to 3 hours in advance for your special meals!</h3>
+
+            <ul class="info-list">
+              <li><svg width="18" height="18" aria-hidden="true"><use href="#i-clock"/></svg><div><strong>Opening Hours</strong><span id="hoursText">Daily · 10:00 AM – 9:00 PM</span></div></li>
+              <li><svg width="18" height="18" aria-hidden="true"><use href="#i-phone"/></svg><div><strong>Call / WhatsApp</strong><span id="phoneText">+92 300 0000000</span></div></li>
+              <li><svg width="18" height="18" aria-hidden="true"><use href="#i-pin"/></svg><div><strong>Delivery</strong><span id="areaText">Home Delivery &amp; Pickup across Islamabad / Rawalpindi City</span></div></li>
+            </ul>
+
+            <div class="order-card-cta">
+              <a href="#" class="btn btn-primary btn-block wa-link" data-wa="card">Order on WhatsApp</a>
+              <a href="#" class="btn btn-outline btn-block tel-link">Call the Kitchen</a>
+            </div>
+
+            <p class="order-card-foot"><span class="mini-heart">♥</span> Thank you! For your order, we hope every bite brings you joy. <span class="mini-heart">♥</span></p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-word logo-word--sm logo-word--light">
+          <span class="lc">C<svg class="ht ht-c" viewBox="0 0 32 31" aria-hidden="true"><use href="#i-heart"/></svg></span><span>R</span><span>A</span><span class="lv">V<svg class="ht ht-v" viewBox="0 0 32 31" aria-hidden="true"><use href="#i-heart"/></svg></span><span>I</span><span>C</span>
+        </span>
+        <p>Made with love — just for you.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#menu">Menu</a>
+        <a href="#order">Order</a>
+        <a href="#contact">Contact</a>
+        <a href="#" class="wa-link" data-wa="footer">WhatsApp</a>
+      </nav>
+      <p class="footer-tag">Homemade <span class="mini-heart">♥</span> Fresh <span class="mini-heart">♥</span> Hygienic <span class="mini-heart">♥</span> Tasty Food</p>
+      <p class="footer-copy">© <span id="year">2026</span> CRAVIC Cloud Kitchen. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ============ Cart drawer ============ -->
+  <div class="overlay" id="overlay" hidden></div>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-label="Your order">
+    <header class="cart-head">
+      <div>
+        <p class="script-line script-line--sm">Your Order</p>
+        <h2 class="cart-title">Order Tray <span class="mini-heart">♥</span></h2>
+      </div>
+      <button class="icon-btn" id="cartClose" aria-label="Close order tray">✕</button>
+    </header>
+
+    <div class="cart-body" id="cartItems"></div>
+
+    <footer class="cart-foot">
+      <div class="cart-total">
+        <span>Subtotal</span>
+        <strong id="cartTotal">Rs 0</strong>
+      </div>
+      <p class="cart-hint">Delivery charges, if any, are confirmed on WhatsApp.</p>
+      <button class="btn btn-primary btn-block" id="checkoutBtn">Send Order on WhatsApp</button>
+      <button class="btn btn-text btn-block" id="clearBtn">Clear order tray</button>
+    </footer>
+  </aside>
+
+  <!-- ============ Toast ============ -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
